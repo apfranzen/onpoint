@@ -19,11 +19,13 @@
 
     picturesService.getPictures()
     .then((pictures) => {
-      this.pictures = pictures;
+      // this.pictures = pictures;
+      this.pictures = pictures.data;
+      console.log(this.pictures);
     })
     .catch((err) => {
       console.log('err: ', err);
-    })
+    });
   }
 
 })();
