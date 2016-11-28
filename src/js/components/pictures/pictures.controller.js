@@ -19,6 +19,7 @@
 
     picturesService.getPictures()
     .then((pictures) => {
+      console.log('pictures controller');
       // this.pictures = pictures;
       this.pictures = pictures.data;
       console.log(this.pictures);

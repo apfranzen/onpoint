@@ -3,23 +3,32 @@
   'use strict';
 
   angular
-    .module('myApp.config', [])
+    .module('myApp.config', ['ui.router'])
     .config(appConfig)
     .run(function($templateCache) {
       $templateCache.removeAll();
     });
 
-  function appConfig($routeProvider) {
-    $routeProvider
-      .when('/pictures', {
+  function appConfig($stateProvider, $urlRouterProvider) {
+    $stateProvider
+
+      .state('pictures', {
+        url: '/pictures',
         templateUrl: 'js/components/pictures/pictures.view.html',
         controller: 'picturesController',
         controllerAs: 'picCtrl'
       })
 
-      .otherwise({
-        redirectTo: '/'
-      });
+      .state('projects', {
+        url: '/projects',
+        templateUrl: 'js/components/projects/projects.view.html',
+        controller: 'projectsController',
+        controllerAs: 'projectCtrl'
+      })
+
+      // .otherwise({
+      //   redirectTo: '/'
+      // });
   }
 
 })();
