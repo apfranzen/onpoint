@@ -16,10 +16,10 @@
         controller: 'picturesController',
         controllerAs: 'picCtrl'
       })
-      // 
-      // .otherwise({
-      //   redirectTo: '/'
-      // });
+
+      .otherwise({
+        redirectTo: '/'
+      });
   }
 
 })();

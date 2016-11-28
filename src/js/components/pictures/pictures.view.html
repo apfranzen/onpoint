@@ -1,1 +1,4 @@
 <h1>{{picCtrl.greeting}}</h1>
+<ul ng-repeat="picture in picCtrl.pictures">
+  <img ng-src="{{picture.url}}" alt="Description" />
+</ul>
