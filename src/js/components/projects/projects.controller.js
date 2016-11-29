@@ -23,6 +23,17 @@
       console.log('err: ', err);
     })
 
+    this.getProject = function(project) {
+      projectsService.getProject(project)
+      .then((picture) => {
+        console.log('projectService hit');
+        this.picture = picture.data;
+        console.log(this.pictures);
+      })
+      .catch((err) => {
+        console.log('err: ', err);
+      });
+    }
   }
 
 })();
