@@ -26,6 +26,13 @@
         controllerAs: 'projectCtrl'
       })
 
+      .state('project', {
+        url: '/projects/:project',
+        templateUrl: 'js/components/projects/project.view.html',
+        controller: 'projectsController',
+        controllerAs: 'projectCtrl'
+      })
+
       // .otherwise({
       //   redirectTo: '/'
       // });

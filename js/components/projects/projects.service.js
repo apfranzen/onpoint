@@ -18,6 +18,10 @@
     this.getProjects = function() {
       return $http.get(baseURL);
     };
+
+    this.getProject = function(project) {
+      return $http.get(`//localhost:3000/projects/${project}`)
+    }
   }
 
 })();
