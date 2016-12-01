@@ -1,7 +1,17 @@
-<h1>{{projectCtrl.greeting}}</h1>
+<h1>All Projects</h1>
 <div class="container">
-  <div class="col-md-3" ng-repeat="project in projectCtrl.projects">
-    <h4 class="text-center"><a href="/#/projects/{{project.project}}" ng-click="projectsCtrl.getProject('white')">{{project.project}}</a></h4>
+  <div class="col-md-12 project" ng-repeat="project in projectCtrl.projects">
+    <div class="col-md-3">
+      <a href="/#/projects/{{project.name}}">
+        <h3 class="text-center" ng-click="projectCtrl.getProject(project.name)">{{project.name | uppercase}}</h3>
+      </a>
+    </div>
+    <div class="col-md-9">
+      <a href="/#/projects/{{project.name}}">
+        <img class="center-block" ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_220,h_220,c_fill/{{project.pic_url}}.jpg" href="/#/projects/{{project.name}}">
+      </a>
+    </div>
+    <!-- <p>{{project.name}}</p> -->
   </div>
 </div>
 <!-- <ul ng-repeat="project in projectCtrl.projects">

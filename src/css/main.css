@@ -1,1 +1,9 @@
 /* add custom styles */
+a {
+  color:#000000 !important;
+  text-decoration:none !important;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}

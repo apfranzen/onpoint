@@ -11,6 +11,13 @@
 
   function appConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
+      // .state('index', {
+      //     url: '/',
+      //     views: {
+      //       '': { templateUrl: './index.html' },
+      //       'nav@home': { templateUrl: './partialHTML/_header.html' }
+      //     }
+      //   })
 
       .state('pictures', {
         url: '/pictures',
@@ -33,9 +40,8 @@
         controllerAs: 'projectCtrl'
       })
 
-      // .otherwise({
-      //   redirectTo: '/'
-      // });
+      $urlRouterProvider
+        .otherwise('/');
   }
 
 })();
