@@ -44,6 +44,10 @@ a {
   /*padding: 0px 24px 0px 24px;*/
 }
 
+.subtext_accent {
+  color: black;
+}
+
 .sub_header {
   border-width: 0px 1px 1px 1px;
   margin: 0px 0px 0px 0px;
