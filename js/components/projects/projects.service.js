@@ -10,8 +10,6 @@
 
   function projectsService($http) {
     /*jshint validthis: true */
-    console.log('projectService hit');
-    this.greeting = 'project services!';
 
     const baseURL = '//localhost:3000/projects';
 
@@ -20,6 +18,7 @@
     };
 
     this.getProject = function(project) {
+      console.log('single project hit');
       return $http.get(`//localhost:3000/projects/${project}`)
     }
   }

@@ -6,16 +6,13 @@
     .module('myApp.components.projects', [])
     .controller('projectsController', projectsController);
 
-  projectsController.$inject = ['projectsService'];
+  projectsController.$inject = ['projectsService', '$stateParams'];
 
-  function projectsController(projectsService) {
+  function projectsController(projectsService, $stateParams) {
     /*jshint validthis: true */
-    console.log('projectCtrl hit');
-    this.greeting = 'projects greeting'
 
     projectsService.getProjects()
     .then((projects) => {
-      console.log('projects controller hit');
       this.projects = projects.data.data;
       console.log(projects.data.data);
     })
@@ -23,17 +20,21 @@
       console.log('err: ', err);
     })
 
-    this.getProject = function(project) {
+    this.singleProject = '';
+    this.getProject = (project) => {
+      this.singleProject = project;
+      console.log(this.singleProject);
       projectsService.getProject(project)
-      .then((picture) => {
-        console.log('projectService hit');
-        this.picture = picture.data;
-        console.log(this.pictures);
+      .then((pictures) => {
+        this.singleProjectPics = pictures.data.data
+        console.log(pictures.data.data);
       })
       .catch((err) => {
         console.log('err: ', err);
       });
     }
+
+    this.getProject($stateParams.project);
   }
 
 })();

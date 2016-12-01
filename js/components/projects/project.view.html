@@ -1,10 +1,9 @@
-<h1>{{projectCtrl.greeting}}</h1>
-<h2>single project view</h2>
-<!-- <div class="container">
-  <div class="col-md-3" ng-repeat="project in projectCtrl.projects">
-    <h4 class="text-center"><a href="/projects/{{project.project}}">{{project.project}}</a></h4>
+<h1>Pictures for Project: {{projectCtrl.singleProject}}</h1>
+<div class="container">
+  <div class="col-md-3" ng-repeat="project in projectCtrl.singleProjectPics">
+    <p/><p>{{picture.orientation}}</p><img ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_220,h_220,c_fill/{{picture.pic_url}}.jpg" alt="Description" /></p>
   </div>
-</div> -->
+</div>
 <!-- <ul ng-repeat="project in projectCtrl.projects">
   <li>{{project.project}}</li>
-</ul> -->
+</ul>
