@@ -1,22 +1,49 @@
-<h1>All Projects</h1>
-<div class="row">
-  <div class="col-md-12">
-    <p>name</p>
+<div class="row project_sort_bar sub_header">
+  <p class="sub_header_text">Projects</p>
+  <hr>
+  <div class="">
+    <div class="col-md-3 sub_sub_header">
+        <p class="sub_header_subtext">You have 3 projects</p>
+    </div>
+    <div class="col-md-3 sub_sub_header">
+      <p class="sub_header_subtext">33 total pictures</p>
+    </div>
   </div>
 </div>
-<div class="container">
-  <div class="col-md-12 project" ng-repeat="project in projectCtrl.projects">
-    <div class="col-md-3">
-      <a href="/#/projects/{{project.name}}">
-        <h3 class="text-center" ng-click="projectCtrl.getProject(project.name)">{{project.name | uppercase}}</h3>
-      </a>
+
+
+
+<div class="container-fluid main_content_div">
+  <div class="row">
+    <div class="col-md-12 project_sort_bar">
+      <div class="col-md-3">
+        <h5 class="project_bar">Name</h5>
+      </div>
+      <div class="col-md-3">
+        <h5 class="project_bar">Status</h5>
+      </div>
+      <div class="col-md-3">
+        <h5 class="project_bar">Team</h5>
+      </div>
+      <div class="col-md-3">
+        <h5 class="project_bar"># Pictures  </h5>
+      </div>
     </div>
-    <div class="col-md-9">
-      <a href="/#/projects/{{project.name}}">
-        <img class="center-block" ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_220,h_220,c_fill/{{project.pic_url}}.jpg" href="/#/projects/{{project.name}}">
-      </a>
+  </div>
+  <div class="row">
+    <div class="col-md-12 project" ng-repeat="project in projectCtrl.projects">
+      <div class="col-md-3">
+        <a href="/#/projects/{{project.name}}">
+          <h4 ng-click="projectCtrl.getProject(project.name)">{{project.name}}</h4>
+        </a>
+      </div>
+      <div class="col-md-9">
+        <a href="/#/projects/{{project.name}}">
+          <img class="center-block" ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_220,h_220,c_fill/{{project.pic_url}}.jpg" href="/#/projects/{{project.name}}">
+        </a>
+      </div>
+      <!-- <p>{{project.name}}</p> -->
     </div>
-    <!-- <p>{{project.name}}</p> -->
   </div>
 </div>
 <!-- <ul ng-repeat="project in projectCtrl.projects">
