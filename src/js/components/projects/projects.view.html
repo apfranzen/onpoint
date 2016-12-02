@@ -1,4 +1,4 @@
-<subnav breadcrumbs="projectCtrl.breadcrumbs" num="{{projectCtrl.projects.length}}"></subnav>
+<subnav breadcrumbs="projectCtrl.breadcrumbs" num="projectCtrl.projects.length"></subnav>
 
 <div class="container-fluid main_content_div">
   <div class="row">
@@ -21,7 +21,7 @@
     <div class="col-md-12 project" ng-repeat="project in projectCtrl.projects">
       <div class="col-md-3">
         <a href="/#/projects/{{project.name}}">
-          <h4 ng-click="projectCtrl.getProject(project.name)">{{project.name}}</h4>
+          <h4 ng-click="projectCtrl.getProject(project.name)"><span class="label label-success">Success</span> {{project.name}}</h4>
         </a>
       </div>
       <div class="col-md-9">
@@ -29,7 +29,6 @@
           <img class="center-block" ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_220,h_220,c_fill/{{project.pic_url}}.jpg" href="/#/projects/{{project.name}}">
         </a>
       </div>
-      <!-- <p>{{project.name}}</p> -->
     </div>
   </div>
 </div>
