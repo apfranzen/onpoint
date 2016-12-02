@@ -1,1 +1,81 @@
 /* add custom styles */
+.navbar {
+  margin-bottom: 0px;
+  background-color: #fafbfc;
+}
+
+a {
+  color:#000000 !important;
+  text-decoration:none !important;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project_bar {
+  padding-left: 15px;
+}
+
+.project {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-style: solid;
+  border-color: #e9ebec;
+  border-width: 0px 1px 1px 1px;
+  background-color: white;
+}
+
+.container {
+  margin-left: 24px;
+  margin-right: 24px !important;
+}
+
+.project_sort_bar {
+  background-color: #fafbfc;
+  /*margin-bottom: 10px;*/
+  border-style: solid;
+  border-color: #e9ebec;
+  border-width: 1px 1px 1px 1px;
+  padding: 12px 0px 12px 0px;
+}
+
+.main_content_div {
+  margin: 24px 24px 24px 24px;
+  /*padding: 0px 24px 0px 24px;*/
+}
+
+.subtext_accent {
+  color: black;
+}
+
+.sub_header {
+  border-width: 0px 1px 1px 1px;
+  margin: 0px 0px 0px 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.sub_header_text {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.sub_sub_header {
+  padding-left: 0px;
+  font-size: 12px;
+  color: #959da3;
+}
+
+body {
+  background-color: #f0f4f7;
+}
+
+.site-footer {
+  background: #fafbfc;
+  color: #Black;
+  padding: 1.75rem;
+  height: 6rem;
+  font: normal 2rem 'Nothing You Could Do', cursive;
+}

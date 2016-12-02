@@ -1,0 +1,33 @@
+<div class="row project_sort_bar sub_header">
+  <p class="sub_header_text"><a href="/#/projects">Projects</a> > <a href="/#/projects/{{projectCtrl.singleProject}}">{{projectCtrl.singleProject}}</a> >
+  <a href="/#/projects">Classroom</a>
+  </p>
+  <hr>
+  <div class="">
+    <div class="col-md-3 sub_sub_header">
+      <p class="sub_header_subtext">
+        <span class="subtext_accent">33 </span>
+      total pictures</p>
+    </div>
+    <div class="col-md-3 sub_sub_header">
+      <p class="sub_header_subtext">Last picture taken:
+        <span class="subtext_accent">11/30</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
+  <div class="col-md-4" ng-repeat="project in projectCtrl.singleProjectPics">
+    <p/><p>{{picture.orientation}}</p><img ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_350,h_350,c_fill/{{project.pic_url}}.jpg" alt="Description" /></p>
+  </div>
+</div> -->
+
+<div class="row">
+  <div class="col-xs-6 col-md-3" ng-repeat="project in projectCtrl.singleProjectPics">
+    <a href="#" class="thumbnail">
+      <img ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_350,h_350,c_fill/{{project.pic_url}}.jpg">
+    </a>
+  </div>
+  ...
+</div>
