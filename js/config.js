@@ -11,13 +11,9 @@
 
   function appConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
-      // .state('index', {
-      //     url: '/',
-      //     views: {
-      //       '': { templateUrl: './index.html' },
-      //       'nav@home': { templateUrl: './partialHTML/_header.html' }
-      //     }
-      //   })
+      .state('home', {
+        url: '/'
+      })
 
       .state('pictures', {
         url: '/pictures',
@@ -36,6 +32,13 @@
       .state('project', {
         url: '/projects/:project',
         templateUrl: 'js/components/projects/project.view.html',
+        controller: 'projectsController',
+        controllerAs: 'projectCtrl'
+      })
+
+      .state('room', {
+        url: '/projects/:project/:room',
+        templateUrl: 'js/components/projects/room.view.html',
         controller: 'projectsController',
         controllerAs: 'projectCtrl'
       })

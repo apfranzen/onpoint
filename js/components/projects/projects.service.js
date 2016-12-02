@@ -21,6 +21,11 @@
       console.log('single project hit');
       return $http.get(`//localhost:3000/projects/${project}`)
     }
+
+    this.getRoom = function(project, room) {
+      console.log('get room hit');
+      return $http.get(`//localhost:3000/projects/${project}/${room}`)
+    }
   }
 
 })();
