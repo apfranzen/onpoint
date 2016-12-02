@@ -19,14 +19,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Accureq</a>
+          <a class="navbar-brand" ui-sref="home">Accureq</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="/#/projects">All Projects</a></li>
+            <li><a ui-sref="projects">All Projects</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -101,5 +101,7 @@
     <!-- projects component -->
     <script type="text/javascript" src="js/components/projects/projects.controller.js"></script>
     <script type="text/javascript" src="js/components/projects/projects.service.js"></script>
+    <!-- custom directives -->
+    <script type="text/javascript" src="js/components/subheader/subheader.directive.js"></script>
   </body>
 </html>
