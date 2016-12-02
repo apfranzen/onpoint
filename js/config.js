@@ -38,9 +38,9 @@
 
       .state('room', {
         url: '/projects/:project/:room',
-        templateUrl: 'js/components/projects/room.view.html',
-        controller: 'projectsController',
-        controllerAs: 'projectCtrl'
+        templateUrl: 'js/components/room/room.view.html',
+        controller: 'roomController',
+        controllerAs: 'roomCtrl'
       })
 
       $urlRouterProvider

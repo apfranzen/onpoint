@@ -16,7 +16,8 @@
     return {
       scope: {
         breadcrumbs: '<',
-        numprojects: '@'
+        numprojects: '@',
+        numpics: '@'
       },
       restrict: 'E',
       templateUrl: 'js/components/subheader/subheader.html'
