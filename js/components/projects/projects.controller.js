@@ -56,7 +56,15 @@
       {
         state: 'projects',
         text: 'Projects'
-      }
+      },
+      {
+        state: 'project',
+        text: 'Project'
+      },
+      {
+        state: 'room',
+        text: 'Room'
+      },
     ]
 
   }
