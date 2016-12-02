@@ -1,8 +1,10 @@
 <div class="row project_sort_bar sub_header">
   <p class="sub_header_text">
-    <span ng-repeat="bread in breadcrumbs">
-      <a ui-sref="bread.state">{{bread.text}}</a>
-    </span>
+    <ol class="breadcrumb">
+      <li ng-repeat="bread in breadcrumbs">
+        <a ui-sref="{{bread.state}}">{{bread.text}}</a>
+      </li>
+    </ol>
   </p>
   <hr>
   <div class="">
