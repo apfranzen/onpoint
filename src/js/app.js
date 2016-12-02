@@ -11,7 +11,8 @@
       'myApp.config',
       'myApp.components.main',
       'myApp.components.pictures',
-      'myApp.components.projects'
+      'myApp.components.projects',
+      'myApp.components.room'
     ]);
 
 })();
