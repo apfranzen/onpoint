@@ -16,11 +16,6 @@
       this.filterValue = value;
     }
 
-    // this.searchQuery = '';
-    // this.filter = function(value) {
-    //   this.searchQuery = value;
-    // }
-
     projectsService.getProjects()
     .then((projects) => {
       this.projects = projects.data.data;
@@ -37,6 +32,7 @@
       projectsService.getProject(project)
       .then((pictures) => {
         this.singleProjectPics = pictures.data.data
+        this.singleProjectRooms = pictures.data.rooms
         console.log(pictures);
       })
       .catch((err) => {
