@@ -11,6 +11,16 @@
   function projectsController(projectsService, $stateParams, $state) {
     /*jshint validthis: true */
 
+    this.filterValue = 'name';
+    this.filter = function(value) {
+      this.filterValue = value;
+    }
+
+    // this.searchQuery = '';
+    // this.filter = function(value) {
+    //   this.searchQuery = value;
+    // }
+
     projectsService.getProjects()
     .then((projects) => {
       this.projects = projects.data.data;

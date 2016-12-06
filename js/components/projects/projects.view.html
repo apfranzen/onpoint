@@ -1,34 +1,45 @@
 <subnav breadcrumbs="projectCtrl.breadcrumbs" numprojects="{{projectCtrl.projects.length}}" numpics="{{projectCtrl.allpics.length}}"></subnav>
-
 <div class="container-fluid main_content_div">
   <div class="row">
     <div class="col-md-12 project_sort_bar">
       <div class="col-md-3">
-        <h5 class="project_bar">Name</h5>
+        <a ng-click="projectCtrl.filter('name')"><h5 class="project_bar">Name <i ng-if="projectCtrl.filterValue == 'name'" class="fa fa-filter fa-5"></i></h5></a>
       </div>
       <div class="col-md-3">
-        <h5 class="project_bar">Status</h5>
+        <a ng-click="projectCtrl.filter('state')"><h5 class="project_bar">Location
+        <i ng-if="projectCtrl.filterValue == 'state'" class="fa fa-filter"></i></h5></a>
       </div>
       <div class="col-md-3">
-        <h5 class="project_bar">Team</h5>
+        <a ng-click="projectCtrl.filter('status')"><h5 class="project_bar">Status
+        <i ng-if="projectCtrl.filterValue == 'status'" class="fa fa-filter"></i></h5></a>
       </div>
-      <div class="col-md-3">
-        <h5 class="project_bar"># Pictures  </h5>
+      <div class="form-group col-md-3">
+        <input type="text" class="form-control" placeholder="Search" id="searchQuery" name="searchQuery" ng-model="searchQuery">
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12 project" ng-repeat="project in projectCtrl.projects">
+    <div class="col-md-12 project" ng-repeat="project in projectCtrl.projects | orderBy: projectCtrl.filterValue | filter: searchQuery">
       <div class="col-md-3">
         <a href="/#/projects/{{project.name}}">
-          <h4 ng-click="projectCtrl.getProject(project.name)"><span class="label label-success">Success</span> {{project.name}}</h4>
+          <h4 ng-click="projectCtrl.getProject(project.name)"><span class="label label-success">New</span> {{project.name}}</h4>
         </a>
       </div>
-      <div class="col-md-9">
+      <div class="col-md-3">
+        <a href="/#/projects/{{project.name}}">
+          <h4 ng-click="projectCtrl.getProject(project.name)">{{project.city}}, {{project.state}}</h4>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="/#/projects/{{project.name}}">
+          <h4 ng-click="projectCtrl.getProject(project.status)">{{project.status}}</h4>
+        </a>
+      </div>
+      <!-- <div class="col-md-9">
         <a href="/#/projects/{{project.name}}">
           <img class="center-block" ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_220,h_220,c_fill/{{project.pic_url}}.jpg" href="/#/projects/{{project.name}}">
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

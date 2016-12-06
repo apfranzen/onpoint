@@ -43,6 +43,20 @@
         controllerAs: 'roomCtrl'
       })
 
+      .state('signup', {
+        url: '/auth/signup',
+        templateUrl: 'js/components/auth/signup.view.html',
+        controller: 'authController',
+        controllerAs: 'authCtrl'
+      })
+
+      .state('largePicture', {
+        url: '/projects/:project/:room/:pic_url',
+        templateUrl: 'js/components/largePicture/largePicture.view.html',
+        controller: 'largePictureController',
+        controllerAs: 'lPicCtrl'
+      })
+
       $urlRouterProvider
         .otherwise('/');
   }
