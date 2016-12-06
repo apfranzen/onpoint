@@ -12,7 +12,8 @@
       'myApp.components.main',
       'myApp.components.pictures',
       'myApp.components.projects',
-      'myApp.components.room'
+      'myApp.components.room',
+      'myApp.components.largePicture'
     ]);
 
 })();

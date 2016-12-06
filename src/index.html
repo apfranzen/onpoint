@@ -2,14 +2,15 @@
 <html lang="en" ng-app="myApp">
   <head>
     <meta charset="utf-8">
-    <title>Untitled</title>
+    <title>onpoint</title>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   </head>
   <body ng-cloak>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="nav@home">
@@ -19,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" ui-sref="home">Accureq</a>
+          <a class="navbar-brand brand-title" ui-sref="home">onpoint</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,15 +41,10 @@
               </ul>
             </li>
           </ul>
-          <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
+            <li><a ui-sref="login">Login</a></li>
+            <li><a ui-sref="signup">Signup</a></li>
+            <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Action</a></li>
@@ -57,7 +53,7 @@
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Separated link</a></li>
               </ul>
-            </li>
+            </li> -->
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -83,8 +79,14 @@
       }, false);
     </script> -->
 
+    <!-- <div class="col-md-12 jumbotron">
+      <h1>Welcome to onpoint</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div> -->
     <footer class="site-footer">
-      <nav class="text-center">Accureq
+      <nav class="text-center">onpoint
         <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2016
       </nav>
     </footer>
@@ -109,6 +111,12 @@
     <!-- room component -->
     <script type="text/javascript" src="js/components/room/room.controller.js"></script>
     <script type="text/javascript" src="js/components/room/room.service.js"></script>
+    <!-- largePicture component -->
+    <script type="text/javascript" src="js/components/largePicture/largePicture.controller.js"></script>
+    <script type="text/javascript" src="js/components/largePicture/largePicture.service.js"></script>
+    <!-- auth component -->
+    <script type="text/javascript" src="js/components/auth/auth.controller.js"></script>
+    <script type="text/javascript" src="js/components/auth/auth.service.js"></script>
     <!-- custom directives -->
     <script type="text/javascript" src="js/components/subheader/subheader.directive.js"></script>
     <script type="text/javascript" src="js/components/mainConent/maincontent.js"></script>

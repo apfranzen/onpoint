@@ -24,7 +24,7 @@
 
     this.getAllPictures = function() {
       console.log('all pictures serivce hit');
-      return $http.get(`//localhost:3000/projects/query/test/allpics`)
+      return $http.get(`//localhost:3000/pictures/query/allpics`)
     }
   }
 
