@@ -37,3 +37,18 @@ Landing page
 Use date posted in project/room view
 Use select to filter on room for orientation
 Change compass orientation based on direction
+Fix header (link highlighting)
+Add filter to project view:
+  - date range
+  - floor
+  - room dropdown
+icon
+bring landing page in
+seed more projects
+if picture is < 1 day "added today"
+fix project view -> room -> all pics for room -> next room
+projects view
+  - project value
+  - core market
+room view
+  - add direction filter
