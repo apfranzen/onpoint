@@ -1,11 +1,11 @@
 /* add custom styles */
 .navbar {
   margin-bottom: 0px;
-  background-color: #fafbfc;
+  /*background-color: #fafbfc;*/
 }
 
 a {
-  color:#000000 !important;
+  /*color:#000000 !important;*/
   text-decoration:none !important;
 }
 
@@ -14,12 +14,11 @@ a {
 }
 
 .project_bar {
-  padding-left: 15px;
+  /*padding-left: 15px;*/
 }
 
 .project {
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 10px 35px 10px 35px;
   border-style: solid;
   border-color: #e9ebec;
   border-width: 0px 1px 1px 1px;
@@ -37,7 +36,15 @@ a {
   border-style: solid;
   border-color: #e9ebec;
   border-width: 1px 1px 1px 1px;
-  padding: 12px 0px 12px 0px;
+  padding: 12px 35px 12px 35px;
+}
+
+.brand-title {
+  color: #fed136 !important;
+}
+
+.orange {
+  color: #fed136 !important;
 }
 
 .main_content_div {
@@ -77,8 +84,8 @@ body {
 }
 
 .site-footer {
-  background: #fafbfc;
-  color: #Black;
+  background: #222222;
+  color: #fed136;
   padding: 1.75rem;
   height: 6rem;
   font: normal 2rem 'Nothing You Could Do', cursive;

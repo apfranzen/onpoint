@@ -1,0 +1,72 @@
+<div class="row project_sort_bar sub_header">
+  <p class="sub_header_text">
+    <ol class="breadcrumb">
+      <li>
+        <a ui-sref="projects">Projects</a>
+      </li>
+      <li>
+        <a ui-sref="project({ project: lPicCtrl.project })">{{lPicCtrl.project}}</a>
+      </li>
+      <li>
+        <a ui-sref="room({ project: lPicCtrl.project, room:  lPicCtrl.room })">{{lPicCtrl.room}}</a>
+      </li>
+      <li>
+        <a ui-sref="room({ project: lPicCtrl.project, room:  lPicCtrl.pic_url, pic_url: lPicCtrl.pic_url })">{{lPicCtrl.pic_url}}</a>
+      </li>
+    </ol>
+  </p>
+  <hr>
+  <div class="">
+    <div class="col-md-3 sub_sub_header">
+        <p class="sub_header_subtext">
+          <span class="subtext_accent">{{lPicCtrl.roomPics.length}}</span>
+        Picture in <span class="subtext_accent">{{lPicCtrl.room}}</span></p>
+    </div>
+    <div class="col-md-3 sub_sub_header">
+      <p class="sub_header_subtext">
+      Last Picture Posted on:
+      <span class="subtext_accent">11/30/16</span>
+    </p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid main_content_div">
+  <div class="row">
+    <div class="col-md-12 project_sort_bar">
+      <div class="col-md-3">
+        <h5 class="project_bar">Name</h5>
+      </div>
+      <div class="col-md-3">
+        <h5 class="project_bar">Status</h5>
+      </div>
+      <div class="col-md-3">
+        <h5 class="project_bar">Team</h5>
+      </div>
+      <div class="col-md-3">
+        <h5 class="project_bar"># Pictures  </h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <table class="table table-condensed">
+      <tr class="">
+        <th><strong>Picture</strong></th>
+        <th><strong>Orientation</strong></th>
+        <th><strong>Date Taken</strong></th>
+      </tr>
+      <tr>
+        <td>{{lPicCtrl.pic.pic_url}}</td>
+        <td>{{lPicCtrl.pic.orientation}}</td>
+        <td>{{lPicCtrl.date}}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="thumbnails">
+    <div class="col-xs-6 col-md-7">
+      <a class="thumbnail">
+        <img ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_1200,h_800,c_fill/{{lPicCtrl.pic.pic_url}}.jpg" alt="...">
+      </a>
+    </div>
+  </div>
+</div>

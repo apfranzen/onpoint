@@ -29,33 +29,61 @@
   <div class="row">
     <div class="col-md-12 project_sort_bar">
       <div class="col-md-3">
-        <h5 class="project_bar">Name</h5>
+        <a ng-click="projectCtrl.filter('room')"><h5 class="project_bar">Room <i ng-if="projectCtrl.filterValue == 'room'" class="fa fa-filter fa-5"></i></h5></a>
       </div>
       <div class="col-md-3">
-        <h5 class="project_bar">Status</h5>
+        <select class="form-control" ng-model="searchQuery.level">
+          <option autofocus value="">Filter by Floor</option>
+          <option ng-repeat="level in projectCtrl.singProjectLevels" value="{{level}}">Floor {{level}}</option>
+          <!-- <option>Floor 2</option> -->
+        </select>
+        <h1>{{searchQuery}}</h1>
       </div>
       <div class="col-md-3">
-        <h5 class="project_bar">Team</h5>
+        <a ng-click="projectCtrl.filter('num_pics')"><h5 class="project_bar"># Pictures <i ng-if="projectCtrl.filterValue == 'num_pics'" class="fa fa-filter fa-5"></i></h5></a>
       </div>
-      <div class="col-md-3">
-        <h5 class="project_bar"># Pictures  </h5>
+      <div class="form-group col-md-3">
+        <input type="text" class="form-control" placeholder="Search" id="searchQuery" name="searchQuery" ng-model="searchQuery.room">
       </div>
     </div>
   </div>
+  <!-- <div>
+    <div ng-repeat="pic in projectCtrl.singleProjectPics | filter:searchQuery">
+      {{pic | json}}
+    </div>
+  </div> -->
   <div class="row">
-    <a>
-      <div class="col-md-12 project" ng-repeat="project in projectCtrl.singleProjectPics">
+    <!-- div for each room -->
+    <div class="col-md-12 project" ng-repeat="room in projectCtrl.singleProjectData | orderBy: projectCtrl.filterValue | filter:searchQuery">
+      <div class="col-md-12">
+        <a ui-sref="largePicture({ project: projectCtrl.singleProject, room: room })">
+          <h4><span class="label label-success">New</span> {{room.room}}</h4>
+        </a>
+
+        <!-- div for each picture -->
+        <div class="row thumbnails">
+          <div class="col-xs-6 col-md-2" ng-repeat="pic in room.pics">
+            <a class="thumbnail" ui-sref="largePicture({ project: picture.project, room: picture.room, pic_url: picture.pic_url})">
+              <img ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_350,h_350,c_fill/{{pic.pic_url}}.jpg" alt="...">
+            </a>
+          </div>
+        </div>
+      <!-- end example code -->
+      </div>
+    </div>
+      <!-- div for each picture in room -->
+      <!-- <div class="col-md-12 project" ng-repeat="room in projectCtrl.singleProjectPics | orderBy: projectCtrl.filterValue | filter: searchQuery">
         <div class="col-md-3">
           <a ui-sref="room({ project: projectCtrl.singleProject, room: project.room })">
-            <h4><span class="label label-success">Success</span> {{project.room}}</h4>
+            <h4><span class="label label-success">New</span> {{room.room}}</h4>
           </a>
         </div>
         <div class="col-md-9">
-          <a ui-sref="room({ project: projectCtrl.singleProject, room: project.room })">
-            <img class="center-block" ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_220,h_220,c_fill/{{project.pic_url}}.jpg">
+          <a ui-sref="room({ project: projectCtrl.singleProject, room: room.room })">
+            <img class="center-block" ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_220,h_220,c_fill/{{room.pic_url}}.jpg">
           </a>
         </div>
-      </div>
-    </a>
+      </div> -->
+
   </div>
 </div>

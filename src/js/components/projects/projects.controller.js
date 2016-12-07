@@ -6,10 +6,15 @@
     .module('myApp.components.projects', [])
     .controller('projectsController', projectsController);
 
-  projectsController.$inject = ['projectsService', '$stateParams', '$state'];
+  projectsController.$inject = ['projectsService', '$stateParams', '$state', '$rootScope'];
 
-  function projectsController(projectsService, $stateParams, $state) {
+  function projectsController(projectsService, $stateParams, $state, $rootScope) {
     /*jshint validthis: true */
+
+    this.filterValue = 'name';
+    this.filter = function(value) {
+      this.filterValue = value;
+    }
 
     projectsService.getProjects()
     .then((projects) => {
@@ -26,8 +31,10 @@
       console.log(this.singleProject);
       projectsService.getProject(project)
       .then((pictures) => {
-        this.singleProjectPics = pictures.data.data
-        console.log(pictures);
+        this.singleProjectData = pictures.data.data
+        // this.singleProjectRooms = pictures.data.rooms
+        // this.singProjectLevels = pictures.data.levels
+        console.log(pictures.data.data);
       })
       .catch((err) => {
         console.log('err: ', err);
