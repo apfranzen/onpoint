@@ -6,9 +6,9 @@
     .module('myApp.components.projects', [])
     .controller('projectsController', projectsController);
 
-  projectsController.$inject = ['projectsService', '$stateParams', '$state'];
+  projectsController.$inject = ['projectsService', '$stateParams', '$state', '$rootScope'];
 
-  function projectsController(projectsService, $stateParams, $state) {
+  function projectsController(projectsService, $stateParams, $state, $rootScope) {
     /*jshint validthis: true */
 
     this.filterValue = 'name';

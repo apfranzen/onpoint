@@ -12,7 +12,8 @@
   function appConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
-        url: '/'
+        url: '/',
+        template:'<landing-page></landing-page>'
       })
 
       .state('pictures', {
@@ -57,8 +58,13 @@
         controllerAs: 'lPicCtrl'
       })
 
-      $urlRouterProvider
-        .otherwise('/');
+      .state('landing', {
+        url: '/landing',
+        templateUrl: 'js/components/largePicture/largePicture.view.html'
+      })
+
+      // $urlRouterProvider
+      //   .otherwise('/');
   }
 
 })();

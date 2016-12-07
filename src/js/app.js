@@ -13,7 +13,10 @@
       'myApp.components.pictures',
       'myApp.components.projects',
       'myApp.components.room',
-      'myApp.components.largePicture'
+      'myApp.components.largePicture',
+      'myApp.components.navbar',
+      'myApp.components.landingPage',
+      'myApp.components.landing'
     ]);
 
 })();
