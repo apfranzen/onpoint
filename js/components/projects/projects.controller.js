@@ -31,9 +31,10 @@
       console.log(this.singleProject);
       projectsService.getProject(project)
       .then((pictures) => {
-        this.singleProjectPics = pictures.data.data
-        this.singleProjectRooms = pictures.data.rooms
-        console.log(pictures);
+        this.singleProjectData = pictures.data.data
+        // this.singleProjectRooms = pictures.data.rooms
+        // this.singProjectLevels = pictures.data.levels
+        console.log(pictures.data.data);
       })
       .catch((err) => {
         console.log('err: ', err);
