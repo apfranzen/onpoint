@@ -12,7 +12,7 @@
   function appConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
-        url: '/',
+        url: '/#/',
         template:'<landing-page></landing-page>'
       })
 
