@@ -21,25 +21,20 @@
   <div class="row">
     <div class="col-md-12 project" ng-repeat="project in projectCtrl.projects | orderBy: projectCtrl.filterValue | filter: searchQuery">
       <div class="col-md-3">
-        <a href="/#/projects/{{project.name}}">
+        <a ui-sref="project({ project: projectCtrl.singleProject})">
           <h4 ng-click="projectCtrl.getProject(project.name)"><span class="label label-success">New</span> {{project.name}}</h4>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="/#/projects/{{project.name}}">
+        <a ui-sref="project({ project: projectCtrl.singleProject})">
           <h4 ng-click="projectCtrl.getProject(project.name)">{{project.city}}, {{project.state}}</h4>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="/#/projects/{{project.name}}">
+        <a ui-sref="project({ project: projectCtrl.singleProject})">
           <h4 ng-click="projectCtrl.getProject(project.status)">{{project.status}}</h4>
         </a>
       </div>
-      <!-- <div class="col-md-9">
-        <a href="/#/projects/{{project.name}}">
-          <img class="center-block" ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_220,h_220,c_fill/{{project.pic_url}}.jpg" href="/#/projects/{{project.name}}">
-        </a>
-      </div> -->
     </div>
   </div>
 </div>
