@@ -49,8 +49,7 @@
     <div class="col-xs-6 col-md-3" ng-repeat="project in roomCtrl.roomPics">
       <a class="thumbnail" ui-sref="largePicture({ project: roomCtrl.project, room: roomCtrl.room, pic_url: project.pic_url})">
         <img ng-src="http://res.cloudinary.com/apfranzen/image/upload/w_350,h_350,c_fill/{{project.pic_url}}.jpg" alt="...">
-      </a>
-      <p>{{project.pic_url}}</p>
+      </a><span class="label label-success">New</span>
     </div>
   </div>
 </div>
