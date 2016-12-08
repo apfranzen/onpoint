@@ -13,7 +13,7 @@
     console.log('picService hit');
     this.greeting = 'picture services!';
 
-    const baseURL = '//localhost:3000/pictures';
+    const baseURL = 'https://gentle-shelf-53953.herokuapp.com/pictures';
 
     this.getPictures = function() {
       return $http.get(baseURL);

@@ -11,7 +11,7 @@
   function roomService($http) {
     this.getRoom = function(project, room) {
       console.log('get room hit');
-      return $http.get(`//localhost:3000/projects/${project}/${room}`)
+      return $http.get(`https://gentle-shelf-53953.herokuapp.com/projects/${project}/${room}`)
     }
   }
 

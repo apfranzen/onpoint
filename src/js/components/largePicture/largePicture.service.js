@@ -12,7 +12,7 @@
     this.getPic = function(project, room, pic_url) {
       console.log('project: ', project, 'room: ', room, 'pic_url: ', pic_url);
       console.log('get largePicture service hit');
-      return $http.get(`//localhost:3000/projects/${project}/${room}/${pic_url}`)
+      return $http.get(`https://gentle-shelf-53953.herokuapp.com/projects/${project}/${room}/${pic_url}`)
     }
   }
 
