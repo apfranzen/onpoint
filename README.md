@@ -2,11 +2,11 @@
 
 ![onpoint](./readme/onpoint.png)
 
-## What is *onpoint*?
-A full stack platform for construction companies, built to increase transparency and accuracy on large projects by using WiFi fingerprinting. For my capstone use-case, the user takes a photo on their phone or tablet, and *onpoint* does the rest, automatically attaching the room the picture was taken in to the picture’s metadata using machine learning. This gives each picture more significance, allowing the project team to sort pictures by area, time and other attributes for as-built documentation, progress pictures, or in the event of an insurance or financial claim.
-
 # 🚧 Welcome to the *onpoint* Github Repository! 🚧
 >*Construction Done Smart*
+
+## What is *onpoint*?
+A full stack platform for construction companies, built to increase transparency and accuracy on large projects by using WiFi fingerprinting. For my capstone use-case, the user takes a photo on their phone or tablet, and *onpoint* does the rest, automatically attaching the room the picture was taken in to the picture’s metadata using machine learning. This gives each picture more significance, allowing the project team to sort pictures by area, time and other attributes for as-built documentation, progress pictures, or in the event of an insurance or financial claim.
 
 ### [Visit the Deployed Website](adamfranzen.com/onpoint)
 
@@ -14,7 +14,6 @@ A full stack platform for construction companies, built to increase transparency
 - [Client](https://github.com/apfranzen/onpoint) 🖥
 - [Server](https://github.com/apfranzen/onpoint-server)
 - [Pi-Server](https://github.com/apfranzen/onpoint-pi)
-
 
 ### How does it work?
 ![onpoint](./readme/flow.png)
