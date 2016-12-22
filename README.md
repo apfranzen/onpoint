@@ -2,9 +2,10 @@
 
 ![onpoint](./readme/onpoint.png)
 
-# Welcome to the *onpoint* Github Repository! 🚧 *Construction Done Smart* 🚧
+# 🚧 Welcome to the *onpoint* Github Repository! 🚧
+>*Construction Done Smart*
 
-# [Visit the Deployed Website](adamfranzen.com/onpoint)
+### [Visit the Deployed Website](adamfranzen.com/onpoint)
 
 >### Repos:
 - [Client](https://github.com/apfranzen/onpoint) 🖥
