@@ -2,8 +2,7 @@
 
 ![onpoint](./readme/onpoint.png)
 
-# 🚧 Welcome to the *onpoint* Github Repository! 🚧
-## *Construction Done Smart*
+# Welcome to the *onpoint* Github Repository! 🚧 *Construction Done Smart* 🚧
 
 # [Visit the Deployed Website](adamfranzen.com/onpoint)
 
