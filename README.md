@@ -1,3 +1,7 @@
+
+
+![onpoint](./readme/onpoint.png)
+
 # 🚧 Welcome to the *onpoint* Github Repository! 🚧
 
 [Visit the Deployed Website](adamfranzen.com/onpoint)
@@ -6,13 +10,7 @@
 A full stack platform for construction companies, built to increase transparency and accuracy on large projects by using WiFi fingerprinting. For my capstone use-case, the user takes a photo on their phone or tablet, and *onpoint* does the rest, automatically attaching the room the picture was taken in to the picture’s metadata using machine learning. This gives each picture more significance, allowing the project team to sort pictures by area, time and other attributes for as-built documentation, progress pictures, or in the event of an insurance or financial claim. 
 
 ### How does it work?
-*onpoint* aggregates river conditions by accessing current USGS (United States Geological Survey) river station data. Combined with fishing reports with local insight from the finishing community, *Anglers* is a valuable resource for your next day on the water.
-
->### Rivers Aggregated:
-- Arkansas
-- Upper South Platte
-- Blue
-- Roaring Fork
+![onpoint](./readme/flow.png)
 
 ### Languages and Frameworks Used
 - [Raspberry Pi](https://www.raspberrypi.org/)
