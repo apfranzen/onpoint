@@ -24,9 +24,9 @@ A full stack platform for construction companies, built to increase transparency
 
 | Feature        | Status           | Notes |
 | ------------- |:-------------:|
-| offline photo storage on jobsite      | complete | |
+| offline photo storage on jobsite      | complete | Test |
 | offline indoor positioning      | in-progress | internet currently required for location services      |
-| augmented reality - `Time Machine` feature | future feature      | |
+| augmented reality - `Time Machine` feature | future feature      | Test |
 | SLR camera support | future feature | additional Raspberry Pi connected to the SLR would be used to send the picture and accomplish indoor positioning |
 
 
