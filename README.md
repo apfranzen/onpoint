@@ -24,10 +24,16 @@ A full stack platform for construction companies, built to increase transparency
 
 | Feature        | Status           | Notes |
 | ------------- |:-------------:|
-| offline photo storage on jobsite      | complete | Test |
+| offline photo storage on jobsite      | complete | |
 | offline indoor positioning      | in-progress | internet currently required for location services      |
-| augmented reality - `Time Machine` feature | future feature      | Test |
+| augmented reality - `Time Machine` feature | future feature      | |
 | SLR camera support | future feature | additional Raspberry Pi connected to the SLR would be used to send the picture and accomplish indoor positioning |
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 
 - onpoint was designed to work on a construction jobsite with the assumption that there is no or intermittent internet:
