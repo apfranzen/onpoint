@@ -20,7 +20,8 @@ A full stack platform for construction companies, built to increase transparency
 ### How does it work?
 ![onpoint](./readme/flow.png)
 
-> ### Additional functionality notes:
+### Additional functionality notes:
+
 | Feature        | Status           | Notes |
 | ------------- |:-------------:|
 | offline photo storage on jobsite      | complete | |
