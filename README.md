@@ -8,7 +8,7 @@
 ## What is *onpoint*?
 A full stack platform for construction companies, built to increase transparency and accuracy on large projects by using WiFi fingerprinting. For my capstone use-case, the user takes a photo on their phone or tablet, and *onpoint* does the rest, automatically attaching the room the picture was taken in to the picture’s metadata using machine learning. This gives each picture more significance, allowing the project team to sort pictures by area, time and other attributes for as-built documentation, progress pictures, or in the event of an insurance or financial claim.
 
-### [Visit the Deployed Website](http://adamfranzen.com/onpoint)
+### [Visit the Deployed Website](https://apfranzen.github.io/onpoint/)
 
 >### Repos:
 - [Client](https://github.com/apfranzen/onpoint) 🖥
